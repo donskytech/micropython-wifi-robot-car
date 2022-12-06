@@ -20,6 +20,8 @@ class RobotCar():
         print('Car stopping')
         self.right_motor_control_1.value(0)
         self.right_motor_control_2.value(0)
+        self.left_motor_control_1.value(0)
+        self.left_motor_control_2.value(0)
         self.right_motor_enable_pin.duty_u16(0)
         self.left_motor_enable_pin.duty_u16(0)
         
