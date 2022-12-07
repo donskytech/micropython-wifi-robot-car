@@ -39,7 +39,7 @@ async def index(request):
 
 @app.route("/ws")
 @with_websocket
-async def echo(request, ws):
+async def executeCarCommands(request, ws):
     while True:
         websocket_message = await ws.receive()
         print(f"receive websocket message : {websocket_message}")
