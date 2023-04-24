@@ -2,7 +2,7 @@ from machine import Pin, PWM
 
 """
 Class to represent our robot car
-""""
+"""
 class RobotCar():
     def __init__(self, enable_pins, motor_pins, speed):
         self.right_motor_enable_pin = PWM(Pin(enable_pins[0]), freq=2000)
